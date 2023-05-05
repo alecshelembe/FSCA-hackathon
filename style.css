@@ -1,0 +1,649 @@
+/* font */
+@font-face {
+    font-family: 'carter_oneregular';
+    src: url('/font/carterone-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'bubblegum_sansregular';
+    src: url('/font/bubblegumsans-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'merriweather_sansregular';
+    src: url('/font/merriweathersans-variablefont_wght-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'fredoka_oneregular';
+    src: url('/font/fredokaone-regular-webfont.woff') format('woff');
+}
+
+/* background image */
+body {
+    background-color: rgba(0, 0, 0, 0.87);
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+.container-navbar {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: end;
+    font-size: 20px;
+}
+.container-navbar .portfolio {
+    flex-grow: 1;
+    padding: 25px;
+    font-family: 'carter_oneregular';
+    font-size: 30px;
+}
+.container-navbar span {
+    color: #327ab4;
+}
+.container-navbar .home, .about, .service, .skills, .teams, .contact  {
+    padding: 35px 50px;
+    font-family: 'bubblegum_sansregular';
+}
+.home:hover, .about:hover, .service:hover, .skills:hover, .teams:hover, .contact:hover {
+    color: #327ab4;
+}
+
+/* content slide 1 */
+.container-content-1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-content-1 .open {
+    color: white;
+    margin: 200px 150px ;
+}
+.container-content-1 p, h4, .btn {
+    font-family: 'merriweather_sansregular';
+    font-size: 20px;
+}
+.container-content-1 h1 {
+    font-family: 'fredoka_oneregular';
+    font-size: 45px;
+}
+.container-content-1 h4 span {
+    color: #327ab4;
+    font-size: 25px;
+}
+.container-content-1 .btn {
+    background-color: #327ab4;
+    border: none;
+    color: black;
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+
+/* hover button hire me */
+.container-content-1 .btn:hover {
+    background: #bf41e6;
+    color: black ;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+
+/* my photo in slide 1 */
+#photo-thing img {
+    width: 363px;
+    height: 590px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 980px;
+    margin-top: 74px;
+    filter: drop-shadow(-10px 10px 10px rgba(0,0,0,0.6));
+    animation: img-up 2s .5s forwards;
+}
+
+/* box yellow in back my picture */
+#box {
+    width: 380px;
+    height: 480px;
+    background-color: #327ab4;
+    left: 890px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
+    animation: box-animation 4s .5s forwards;
+}
+
+/* animatin white line */
+.line-ver {
+    border: 1px solid white;
+    width: 200px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    opacity: .5;
+    margin-left: 864px;
+    animation: right-to-left 3s .5s;
+}
+.line-hor {
+    border: 1px solid white;
+    width: 3px;
+    height: 220px;
+    background-color: white;
+    position: absolute;
+    opacity: .5;
+    margin-left: 859px;
+    animation: down-to-up 3s .5s;
+}
+/* content slide 2 */
+.container-content-2, .container-content-3 {
+    background-color: white;
+}
+.container-content-2 .aboutme h2 {
+    color: black;
+    text-align: center;
+    font-family: 'carter_oneregular';
+    font-size: 32px;
+    padding-top: 90px;
+}
+.container-content-2 .aboutme h3 {
+    color: black;
+    text-align: center;
+    font-family: 'merriweather_sansregular';
+    font-size: 20px;
+    padding-top: 25px;
+}
+.container-content-3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+.container-content-3 .cv-photo img {
+    width: 355px;
+    height: 476px;
+}
+.container-content-3 .cv-content {
+    width: 500px;
+}
+.container-content-3 .cv-content h4 {
+    font-family: 'fredoka_oneregular';
+}
+.container-content-3 .cv-content span {
+    color: #327ab4;
+    text-shadow: 1px 1px 1px black;
+}
+.container-content-3 .cv-content p {
+    font-family: 'merriweather_sansregular';
+    line-height: 25px;
+    text-align: justify;
+}
+.container-content-3 .cv-content .btn {
+    background-color: #327ab4;
+    border: none;
+    color: black;
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: inset black;
+}
+.container-content-3 .btn:hover {
+    background: #bf41e6;
+    color: black ;
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.3);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+/* content slide 3 */
+/* .container-content-4 .my-services  h2 {
+    color: white;
+    text-align: center;
+    font-family: 'carter_oneregular';
+    font-size: 32px;
+    padding-top: 90px;
+}
+.container-content-4 .my-services h3 {
+    color: white;
+    text-align: center;
+    font-family: 'merriweather_sansregular';
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+.container-content-5 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.container-content-5 .webdev, .mobdev, .uxui, img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+
+}
+.container-content-5 h4 {
+    width: 220px;
+    text-align: center;
+    margin-left: -80px;
+    color: white;
+}
+.container-content-5 p {
+    width: 220px;
+    text-align: center;
+    margin-left: -70px;
+    color: white;
+}
+.webdev, .mobdev, .uxui {
+    background: #181717;
+    padding: 20px 90px 130px;
+    box-shadow: 2px -2px 15px 0px #BBBD85;
+    border-radius: 5px;
+    margin-bottom: 110px;
+}
+/* content slide 4 */
+/*container-content-6 .my-skills  h2 {
+    background-color: white;
+    text-align: center;
+    font-family: 'carter_oneregular';
+    font-size: 32px;
+    padding: 23px;
+}
+.container-content-6 .my-skills  h3 {
+    background-color: white;
+    text-align: center;
+    font-family: 'merriweather_sansregular';
+    font-size: 20px;
+    padding: 23px;
+}
+.container-content-7 {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px;
+    height: 530px;
+}
+.container-content-7 .my-creative {
+    width: 500px;
+    height: 300px;
+}
+.container-content-7 .my-creative h4 {
+    font-family: 'fredoka_oneregular';
+    margin-top: 50px;
+}
+.container-content-7 .my-creative p {
+    width: 510px;
+    height: 221px;
+    left: 138px;
+    top: 2240px;
+    font-family: 'merriweather_sansregular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.container-content-7 .btn {
+    background-color: #FBFF43;
+    border: none;
+    color: black;
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.container-content-7 .btn:hover {
+    background: #CFD337;
+    color: black ;
+    transition: 1s;
+    cursor: pointer;
+}
+.container-content-7 .skill-progrs {
+    width: 510px;
+    height: 300px;
+}
+.container-content-7 .skill-progrs li {
+    margin: 30px;
+    list-style: none;
+}
+.container-content-7 .skill-progrs .progrs {
+    background: #C4C4C4;
+    width: 489px;
+    height: 7px;
+    left: 705px;
+    top: 2222px;
+    border-radius: 30px;
+    display: block;
+    border: 1px;
+    overflow: hidden;
+}
+.container-content-7 .skill-progrs h5 {
+    margin: 20px 0;
+    font-family: 'fredoka_oneregular';
+}
+.container-content-7 .skill-progrs .progrs span {
+    height: 7px;
+    background: #FBFF43;
+    border-radius: 30px;
+    float: left; 
+}
+.html {
+    width: 85%;
+    animation: html 3s;
+}
+.css {
+    width: 90%;
+    animation: css 3s;
+}
+.js {
+    width: 80%;
+    animation: js 3s;
+}
+.php {
+    width: 82%;
+    animation: php 3s;
+}
+.pt {
+    width: 87%;
+    animation: pt 3s;
+}
+/* content slide 5 *
+.container-content-8 .my-teams  h2 {
+    text-align: center;
+    font-family: 'carter_oneregular';
+    font-size: 32px;
+    color: white;
+    padding-top: 90px;
+}
+.container-content-8 .my-teams  h3 {
+    text-align: center;
+    font-family: 'merriweather_sansregular';
+    font-size: 20px;
+    padding: 23px;
+    color: white;
+}
+.container-content-9 {
+    margin: 100px;
+}
+.main-carousel {
+    
+}
+.carousel-cell {
+    width: 25%;
+    height: 350px;
+    margin: 0 15px;
+    background: #FBFF43;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+.carousel-cell img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 2px 46px 60px -18px #000;
+}
+.carousel-cell .details .name {
+    font-size: 20px;
+    margin: 40px 0 10px;
+    font-family: 'carter_oneregular';
+}
+.carousel-cell .details .job {
+    font-size: 23px;
+    font-family: 'merriweather_sansregular';
+}
+.carousel-cell .btn-details {
+    margin: 20px;
+}
+.carousel-cell .btn-details .bt-about {
+    padding: 10px;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+.carousel-cell .btn-details .bt-hire {
+    padding: 10px 16px;
+    border: none;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    transition: .5s;
+}
+.carousel-cell .btn-details .bt-hire:hover {
+    background-color: #f6f883;
+    color: #000;
+    border: 1px solid rgb(231, 201, 28);
+}
+.carousel-cell .btn-details .bt-about:hover {
+    background-color: #f6f883;
+    color: #000;
+    border: 1px solid rgb(231, 201, 28);
+}
+.container-content-10 .my-contact  h2 {
+    background-color: white;
+    text-align: center;
+    font-family: 'carter_oneregular';
+    font-size: 32px;
+    padding-top: 90px;
+}
+.container-content-10 .my-contact  h3 {
+    background-color: white;
+    text-align: center;
+    font-family: 'merriweather_sansregular';
+    font-size: 20px;
+    padding: 23px 0 80px;
+}
+.container-content-11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.container-content-11 .get-in {
+    width: 500px;
+    height: 400px;
+    margin: 0px 0px 50px 130px ;
+}
+.container-content-11 .get-in h4 {
+    font-family: 'fredoka_oneregular';
+    margin-bottom: 20px;
+}
+.container-content-11 .get-in p {
+    font-family: 'merriweather_sansregular';
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    margin: 30px 0 30px;
+}
+.container-content-11 .get-in .icon {
+    display: flex;
+}
+.container-content-11 .get-in .icon .icon-icon {
+    display: flex;
+    flex-direction: column;
+}
+.container-content-11 .get-in .icon .icon-icon img {
+    width: 54px;
+    height: 54px;
+}
+.container-content-11 .get-in .icon .icon-detail {
+
+    margin-left: 15px;
+}
+.container-content-11 .get-in .icon .icon-detail .name {
+    
+}
+.container-content-11 .get-in .icon .icon-detail .name h6 {
+    font-family: 'fredoka_oneregular';
+    font-size: 16px; 
+}
+.container-content-11 .get-in .icon .icon-detail .name p {
+    font-family: 'merriweather_sansregular';
+    font-size: 16px;
+    margin-top: 10px;
+} 
+.container-content-11 .get-in .icon .icon-detail .address {
+    margin-top: 42px;
+}
+.container-content-11 .get-in .icon .icon-detail .address h6 {
+    font-family: 'fredoka_oneregular';
+    font-size: 16px;
+    margin-top: -8px; 
+}
+.container-content-11 .get-in .icon .icon-detail .address p {
+    font-family: 'merriweather_sansregular';
+    font-size: 16px;
+    margin-top: -8px;
+} 
+.container-content-11 .get-in .icon .icon-detail .email {
+    margin-top: 44px;
+}
+.container-content-11 .get-in .icon .icon-detail .email h6 {
+    font-family: 'fredoka_oneregular';
+    font-size: 16px;
+    margin-top: -13px; 
+}
+.container-content-11 .get-in .icon .icon-detail .email p {
+    font-family: 'merriweather_sansregular';
+    font-size: 16px;
+    margin-top: -8px;
+} 
+.container-content-11 .form-contact {
+    width: 600px;
+    height: 450px;
+    margin-right: 50px;
+}
+.container-content-11 .form-contact h4 {
+    margin-bottom: 30px;
+}
+.container-content-11 .form-contact .btn {
+    background-color: #FBFF43;
+    border: none;
+    padding: 12px 50px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+input[type="text"] {
+    width: 278px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+input[id="subject"] {
+    padding-right: 310px;
+    margin-bottom: 20px;
+}
+input[id="message"] {
+    padding-right: 310px;
+    padding-bottom: 100px;
+    text-align: left;
+}
+.container-content-11 .btn:hover {
+    background: #CFD337;
+    color: black ;
+    transition: 1s;
+    cursor: pointer;
+} */
+.footer {
+    height: 60px;
+    color: white;
+    margin: 30px 0 -10px;
+    display: flex;
+    justify-content: center;
+}
+.footer img {
+    margin-top: -2px;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 82%;
+    }
+}
+@keyframes pt {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 87%;
+    }
+}
+@keyframes img-up {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes box-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes right-to-left {
+    0% {
+        opacity: 0;
+        margin-left: -10px;
+    }
+    100% {
+        opacity: .8;
+        margin-top: 0;
+    }
+}
+@keyframes down-to-up {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        opacity: .8;
+        margin-top: 0;
+    }
+}
